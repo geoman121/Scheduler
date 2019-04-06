@@ -32,7 +32,14 @@
                             <outlet property="delegate" destination="SBW-Fb-bRq" id="FBT-V1-z8n"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Scheduler" id="Ob6-we-0KU"/>
+                    <navigationItem key="navigationItem" title="Scheduler" id="Ob6-we-0KU">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="SQs-qX-Fy2">
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="SBW-Fb-bRq" id="Wut-Rc-sx1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8KT-7l-fol" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
