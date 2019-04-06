@@ -11,10 +11,16 @@ import UIKit
 class SchedulerViewController: UITableViewController {
 
     var itemArray = ["George","James","manayath"]
+    let defaults = UserDefaults.standard
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        
+       if let items = defaults.array(forKey: "TodoListArray") as? [String]
+       {
+        itemArray = items
+        }
     }
 
     // Tableview Datasource Methods
@@ -66,6 +72,8 @@ class SchedulerViewController: UITableViewController {
             // when user click add item button on UIalert
             
             self.itemArray.append(textField.text!)
+            
+            self.defaults.set(self.itemArray, forKey: "TodoListArray")
             
             self.tableView.reloadData()
             
