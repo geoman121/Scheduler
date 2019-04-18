@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		5E26DF6B2266EF5000950245 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5E26DF692266EF5000950245 /* DataModel.xcdatamodeld */; };
+		5ECEA3DD22684495003D0378 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEA3DC22684495003D0378 /* Item.swift */; };
+		5ECEA3DF226844A5003D0378 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECEA3DE226844A5003D0378 /* Category.swift */; };
 		5ECFA007225783050031939A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFA006225783050031939A /* AppDelegate.swift */; };
 		5ECFA009225783050031939A /* SchedulerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ECFA008225783050031939A /* SchedulerViewController.swift */; };
 		5ECFA00C225783050031939A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECFA00A225783050031939A /* Main.storyboard */; };
@@ -18,7 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5E26DF6A2266EF5000950245 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		5ECEA3DC22684495003D0378 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		5ECEA3DE226844A5003D0378 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		5ECFA003225783050031939A /* Scheduler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scheduler.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5ECFA006225783050031939A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5ECFA008225783050031939A /* SchedulerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchedulerViewController.swift; sourceTree = "<group>"; };
@@ -64,7 +66,8 @@
 		5E4B6C1F2258CD74002A729C /* Data Model */ = {
 			isa = PBXGroup;
 			children = (
-				5E26DF692266EF5000950245 /* DataModel.xcdatamodeld */,
+				5ECEA3DE226844A5003D0378 /* Category.swift */,
+				5ECEA3DC22684495003D0378 /* Item.swift */,
 			);
 			path = "Data Model";
 			sourceTree = "<group>";
@@ -248,10 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5ECEA3DD22684495003D0378 /* Item.swift in Sources */,
 				5ECFA009225783050031939A /* SchedulerViewController.swift in Sources */,
-				5E26DF6B2266EF5000950245 /* DataModel.xcdatamodeld in Sources */,
 				5ECFA007225783050031939A /* AppDelegate.swift in Sources */,
 				5ED25A3C22678072003E9701 /* CategoryTableViewController.swift in Sources */,
+				5ECEA3DF226844A5003D0378 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -451,19 +455,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		5E26DF692266EF5000950245 /* DataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				5E26DF6A2266EF5000950245 /* DataModel.xcdatamodel */,
-			);
-			currentVersion = 5E26DF6A2266EF5000950245 /* DataModel.xcdatamodel */;
-			path = DataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 5ECF9FFB225783040031939A /* Project object */;
 }
