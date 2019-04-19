@@ -15,6 +15,7 @@
 		5ECFA00E225783060031939A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5ECFA00D225783060031939A /* Assets.xcassets */; };
 		5ECFA011225783060031939A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5ECFA00F225783060031939A /* LaunchScreen.storyboard */; };
 		5ED25A3C22678072003E9701 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5ED25A3B22678072003E9701 /* CategoryTableViewController.swift */; };
+		5EF8BA282268ADAE00BA499D /* SwipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EF8BA272268ADAE00BA499D /* SwipeTableViewController.swift */; };
 		833D287F982BCA7DEF8ADA3C /* Pods_Scheduler.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B634D9A66ED2243F27FFDD72 /* Pods_Scheduler.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		5ECFA010225783060031939A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5ECFA012225783060031939A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5ED25A3B22678072003E9701 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		5EF8BA272268ADAE00BA499D /* SwipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTableViewController.swift; sourceTree = "<group>"; };
 		9BA0ECA3DEDF24589386F1B6 /* Pods-Scheduler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scheduler.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scheduler/Pods-Scheduler.debug.xcconfig"; sourceTree = "<group>"; };
 		B634D9A66ED2243F27FFDD72 /* Pods_Scheduler.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scheduler.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1EB6BB55E12218EFF14319E /* Pods-Scheduler.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scheduler.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scheduler/Pods-Scheduler.release.xcconfig"; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				5ED25A3B22678072003E9701 /* CategoryTableViewController.swift */,
 				5ECFA008225783050031939A /* SchedulerViewController.swift */,
+				5EF8BA272268ADAE00BA499D /* SwipeTableViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -207,15 +210,19 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Scheduler/Pods-Scheduler-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
 				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwipeCellKit/SwipeCellKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
 			);
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwipeCellKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -255,6 +262,7 @@
 				5ECFA009225783050031939A /* SchedulerViewController.swift in Sources */,
 				5ECFA007225783050031939A /* AppDelegate.swift in Sources */,
 				5ED25A3C22678072003E9701 /* CategoryTableViewController.swift in Sources */,
+				5EF8BA282268ADAE00BA499D /* SwipeTableViewController.swift in Sources */,
 				5ECEA3DF226844A5003D0378 /* Category.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
